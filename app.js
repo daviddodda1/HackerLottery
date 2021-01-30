@@ -27,7 +27,7 @@ User.find({}, (error, foundUser) => {
     if (foundUser.length === 0) {
       const newUser = new User();
       newUser.auth = {
-        email: 'Admin',
+        name: 'Admin',
         password: 'AdminPassword',
       };
       newUser.save((err, savedUser) => {
