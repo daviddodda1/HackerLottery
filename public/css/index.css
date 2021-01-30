@@ -1,0 +1,81 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 100vh;
+  background-color: aqua;
+}
+
+.mainContainer {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+}
+
+.lobbiesContainer {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  background-color: #fff;
+  padding: 1rem;
+}
+
+.HouseEarningsContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 1rem;
+  width: 20%;
+  text-align: center;
+}
+
+.btn {
+  margin: auto;
+  display: block;
+  margin-top: 1rem;
+}
+
+.lobby {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid aqua;
+  margin: 0.5rem;
+  padding: 1rem;
+}
+
+.TempContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.lobbyActions {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.displayNone {
+  display: none;
+}
+
+.Input {
+  margin-bottom: 1rem;
+}
+
+.formContainer {
+  margin: auto;
+  display: block;
+  text-align: center;
+  padding: 0.5rem;
+  background-color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.UserNamesContainer {
+  margin-top: 1rem;
+  text-align: center;
+}

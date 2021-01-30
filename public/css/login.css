@@ -1,0 +1,30 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.mainContainer {
+  width: 100%;
+  min-height: 100vh;
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formContainer {
+  padding: 2rem;
+  width: 50%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.Input {
+  margin-bottom: 1rem;
+}
