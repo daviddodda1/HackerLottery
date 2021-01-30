@@ -13,15 +13,23 @@ const Login = () => {
         password: userPass,
       },
       success: function (data) {
-        console.log(data);
-        console.log(Cookies.set('jwt_token', data.data.jwt));
-        swal({
-          title: 'Login Successful',
-          text: 'Will redirect you to home page',
-          icon: 'success',
-        }).then((val) => {
-          window.location.href = '/';
-        });
+        if (data.success) {
+          console.log(data);
+          console.log(Cookies.set('jwt_token', data.data.jwt));
+          swal({
+            title: 'Login Successful',
+            text: 'Will redirect you to home page',
+            icon: 'success',
+          }).then((val) => {
+            window.location.href = '/';
+          });
+        } else {
+          swal({
+            title: 'Login Error',
+            text: data.message,
+            icon: 'error',
+          });
+        }
       },
       error: function (err) {
         swal({
