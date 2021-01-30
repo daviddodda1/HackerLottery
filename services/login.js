@@ -13,6 +13,7 @@ const login = async (req, res) => {
 
   try {
     const Admin = await User.findOne({ 'auth.name': userName });
+    console.log(Admin);
     if (Admin && Admin.auth.password === userPassword) {
       const tokenData = {
         name: Admin.auth.name,
