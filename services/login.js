@@ -26,10 +26,10 @@ const login = async (req, res) => {
       resData.message = 'Login successful';
       res.cookie('token', jwtToken, { maxAge: 900000, httpOnly: true });
     } else {
-      resData.message('Login error');
+      resData.message = 'Login error';
     }
   } catch (e) {
-    resData.message(e.message);
+    resData.message = e.message;
   }
   res.send(resData);
 };
